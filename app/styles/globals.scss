@@ -1,0 +1,19 @@
+body {
+  color: #433f3e;
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 400;
+  font-family: Arial, "Arial Narrow", monospace, sans-serif;
+}
+
+.container {
+  padding: 0 20px;
+  max-width: 980px;
+  margin: 0 auto;
+}
+
+@media (--tablet) {
+  .container {
+    max-width: 640px;
+  }
+}
