@@ -11,14 +11,10 @@ import '../styles/media.scss';
 import { useRouter } from 'next/router';
 
 function MyApp({ Component, pageProps }: AppProps) {
-  const bottomMenu = pageProps.bottomMenu;
-
   const router = useRouter();
 
-  console.log('~| MyApp router: ', router);
-
   return (
-    <Layout bottomMenu={bottomMenu}>
+    <Layout >
       <Component {...pageProps} />
     </Layout>
   );

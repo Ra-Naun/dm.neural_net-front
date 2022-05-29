@@ -1,14 +1,11 @@
 // в идеале переписать на типы но i18n и c ними не дружит
 const commonLocalesConfig = [
-  { code: 'tr', iso: 'tr', label: 'Türk' },
   { code: 'de', iso: 'de', label: 'Deutsch' },
   { code: 'es', iso: 'es', label: 'Español' },
-  { code: 'pt', iso: 'pt', label: 'Português' },
   { code: 'fr', iso: 'fr', label: 'Français' },
   { code: 'it', iso: 'it', label: 'Italiano' },
-  { code: 'jp', iso: 'ja', label: '日本語' },
-  { code: 'pl', iso: 'pl', label: 'Polskie' },
-  { code: 'nl', iso: 'nl', label: 'Nederlands' },
+  { code: 'ru', iso: 'ru', label: 'Русский' },
+  { code: 'en', iso: 'en', label: 'English' },
 ];
 
 export const siteLanguages = String(process.env.LANGS_LIST).split(',');
@@ -27,4 +24,4 @@ export const langIncrementSuffix = process.env.LANG_INCREMENT_SUFFIX
     )
   : [];
 
-export const defaultLocale = process.env.DEFAULT_LOCALE || 'tr';
+export const defaultLocale = process.env.DEFAULT_LOCALE || 'en';

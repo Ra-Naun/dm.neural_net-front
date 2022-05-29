@@ -1,10 +1,10 @@
 import React, { FC } from 'react';
-import DMCAForm from '../../components/DMCAForm/DMCAForm';
+import Button from '../../components/common/Button/Button'
 
 const DMCA = () => {
   return (
     <main>
-      <DMCAForm />
+      <Button color="orange" narrow>DMCA</Button>
     </main>
   );
 };

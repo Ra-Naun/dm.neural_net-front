@@ -1,19 +1,16 @@
 import React, { FC } from 'react';
+import Header from '../common/Header/Header';
 
 import styles from './Layout.module.scss';
 
 interface LayoutProps {
-  bottomMenu: LayoutListItem[];
-}
-
-interface LayoutListItem {
-  href: string;
-  text: string;
+  children?: FC;
 }
 
 const Layout: FC<LayoutProps> = ({ children }) => {
   return (
     <div className={styles.layout}>
+      <Header/>
       {children}
     </div>
   );
